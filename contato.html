@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html> 
+<head>
+ <meta charset="UTF-8">
+ <title>Contato</title>
+ <link rel="stylesheet" href="reset.css">
+ <link rel="stylesheet" href="style.css">
+
+ <style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+  }
+
+  header, footer {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  form {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .input-padrao {
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 8px;
+  }
+
+  fieldset {
+    margin: 20px 0;
+    padding: 10px;
+  }
+
+  .checkbox {
+    display: block;
+    margin: 15px 0;
+  }
+
+  .Enviar {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+
+
+  table {
+    margin: 40px auto;
+    border-collapse: collapse;
+    width: 40%;
+    text-align: left;
+    font-size: 18px;
+  }
+
+  td, th {
+    padding: 8px 15px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  tr:first-child td {
+    font-weight: bold;
+  }
+
+  footer {
+    background-color: #000;
+    color: white;
+    padding: 15px 0;
+    margin-top: 40px;
+  }
+
+  .Copyright {
+    margin-top: 10px;
+  }
+ </style>
+</head>
+
+<body>
+<header> 
+  <div class="caixa">
+    <h1><img src="logo.png" alt="Logo da Barbearia Alura"></h1>   
+    <nav>
+      <ul>
+        <li><a href="index.html.html">Home</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="contato.html">Contatos</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <form>
+    <label for="nomesobrenome">Nome e Sobrenome</label>
+    <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+    <label for="Email">Email</label>
+    <input type="text" id="Email" class="input-padrao" required placeholder="seuemail@dominio.com"> 
+
+    <label for="Telefone">Telefone</label>
+    <input type="text" id="Telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+    <label for="mensagem">Mensagem</label>
+    <textarea cols="70" rows="10" id="mensagem" required></textarea>
+
+    <fieldset>
+      <legend>Como prefere o nosso contato</legend>
+      <label for="radio-email">
+        <input type="radio" name="contato" value="email" id="radio-email"> Email
+      </label>
+      <label for="radio-telefone">
+        <input type="radio" name="contato" value="Telefone" id="radio-telefone"> Telefone
+      </label>
+      <label for="radio-whatsapp">
+        <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> Whatsapp
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Qual horário prefere ser atendido</legend>
+      <select>
+        <option>Manhã</option>
+        <option>Tarde</option>
+        <option>Noite</option>
+      </select>
+    </fieldset>
+
+    <label class="checkbox">
+      <input type="checkbox" checked> Gostaria de receber nossas novidades por email
+    </label>
+
+    <input type="submit" value="Enviar Formulário" class="Enviar"> 
+  </form>
+</main>
+
+<table>
+  <tr>
+    <td>Dia</td>
+    <td>Horário</td>
+  </tr>
+  <tr>
+    <td>Segunda</td>
+    <td>8h às 20h</td>
+  </tr>
+  <tr>
+    <td>Quarta</td>
+    <td>8h às 20h</td>
+  </tr>
+  <tr>
+    <td>Sexta</td>
+    <td>8h às 20h</td>
+  </tr>
+</table>
+
+<footer>
+  <img src="logo-branco.png" alt="Logo da Barbearia Alura">
+  <p class="Copyright">&copy; Copyright Barbearia Alura - 2025</p>
+</footer>
+
+</body>
+</html>
